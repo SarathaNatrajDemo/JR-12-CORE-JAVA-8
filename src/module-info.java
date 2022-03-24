@@ -1,0 +1,5 @@
+module Demos {
+
+	requires junit;
+	
+}
