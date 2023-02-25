@@ -2,7 +2,7 @@ package com.demo.samples.day4.flowcontrol;
 
 public class NestedSwitchDemo {
 
-	public static void main(String[] args)	{
+	public static void main(String[] args) {
 
 		String Branch = "ECE";
 		int year = 2;
@@ -14,13 +14,13 @@ public class NestedSwitchDemo {
 			break;
 
 		case 2:
-			switch (Branch)
-			{
+			switch (Branch) {
 			case "CS":
-				System.out.println(" CS Dept... ");
+				System.out.println("CS Dept... ");
+				break;
 			case "ECE":
 				System.out.println("elective courses : ML, Big Data");
-				break;
+				//break;
 
 			case "IT":
 				System.out.println("elective courses : Software Engineering");

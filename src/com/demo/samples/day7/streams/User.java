@@ -33,8 +33,7 @@ public class User {
     public int getAge() {
     	
     	// 2022 - 1979 = 43 - 1st user
-        return dateOfBirth.until(IsoChronology.INSTANCE.dateNow())
-                .getYears();
+        return dateOfBirth.until(IsoChronology.INSTANCE.dateNow()).getYears();
     }
 
     @Override

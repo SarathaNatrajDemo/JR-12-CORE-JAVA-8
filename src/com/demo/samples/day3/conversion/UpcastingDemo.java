@@ -8,7 +8,7 @@ public class UpcastingDemo {
 		Animal a = new Fish();
 		a.name="GoldFish";
 		a.nature();
-		//a.color ="Red";
+		((Fish) a).color ="Red";
 		
 		Fish f = new Fish();
 		f.name="Whale";

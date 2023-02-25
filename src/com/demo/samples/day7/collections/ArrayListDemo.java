@@ -16,6 +16,9 @@ class ArrayListDemo {
 		ArrayList<String> al1 = new ArrayList<String>();
 		ArrayList arr = new ArrayList<String>();
 		
+		//ArrayList<E>
+		//HashMap<K, V>
+		
 		ArrayList<Student> stuArrayList = new ArrayList<Student>();
 		Scanner sc = new Scanner(System.in);
 
@@ -77,8 +80,9 @@ class ArrayListDemo {
 				// using listiterator - method 3
 				ListIterator<Student> listIterator = stuArrayList.listIterator();
 				while(listIterator.hasNext()) {
+					Student s = listIterator.next();
 					System.out.println(" id ::"
-							+ "id : "+listIterator.next().getId() + " name : "+listIterator.next().getName());
+							+ "id : "+s.getId() + " name : "+s.getName());
 				}
 				System.out.println(" METHOD 4 ********** END");
 				
@@ -92,7 +96,7 @@ class ArrayListDemo {
 				
 				// lambda expression  - method 5 - java 8 new features
 				System.out.println(" METHOD 5 ********** START");
-				stuArrayList.forEach(stu1 -> System.out.println(stu1.getName()+stu1.getId()));
+				stuArrayList.forEach(stu1 -> System.out.println(stu1.getName()+"  "+stu1.getId()));
 				System.out.println(" METHOD 5 ********** END");
 
 				

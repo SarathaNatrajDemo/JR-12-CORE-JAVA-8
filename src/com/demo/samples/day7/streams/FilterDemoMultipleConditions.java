@@ -22,15 +22,16 @@ public class FilterDemoMultipleConditions {
         //or like this
         Person result2 = persons.stream()
                 .filter(p -> {
-                    if ("jack".equals(p.getName()) && 20 == p.getAge()) {
+                    if ("abc".equals(p.getName()) && 20 == p.getAge()) {
                         return true;
                     }
                     return false;
                 }).findAny()
                 .orElse(null);
 
-        System.out.println("result 2 :" + result2.getName());
-
+        System.out.println("result 2 :" + result2);
+        if(result2!= null)
+        	 System.out.println("result 2 :" + result2.getName());
     }
 
 

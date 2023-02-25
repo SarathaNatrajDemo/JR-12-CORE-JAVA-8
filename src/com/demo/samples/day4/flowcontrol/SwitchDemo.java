@@ -6,7 +6,7 @@ public class SwitchDemo {
 
 	public static void main(String[] args) {
 
-		int month = 4;
+		int month = 8;
 
 		switch (month) {
 		case 1:

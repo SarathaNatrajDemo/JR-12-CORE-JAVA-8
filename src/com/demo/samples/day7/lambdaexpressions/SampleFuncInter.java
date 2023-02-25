@@ -12,7 +12,8 @@ public class SampleFuncInter {
 		
 		// create anonymous inner class object
         new Thread(new Runnable() {
-            @Override public void run()
+            @Override
+            public void run()
             {
                 System.out.println("New thread created");
             }

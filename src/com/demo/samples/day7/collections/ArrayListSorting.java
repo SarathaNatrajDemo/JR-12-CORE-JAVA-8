@@ -11,7 +11,7 @@ public class ArrayListSorting  {
 	   arraylist.add(new Employee(210, "AjeetR", 20));
 	   arraylist.add(new Employee(211, "AjeetB", 17));
 
-	   Collections.sort(arraylist);
+	  Collections.sort(arraylist);
 
 	   for(Employee emp: arraylist){
 			System.out.println(emp);

@@ -9,8 +9,9 @@ class StringMethods
 {
  public static void main (String[] args)
  {
-     String s= "GeeksforGeeks";
-     // or String s= new String ("GeeksforGeeks");
+     String s= "stringDemo";
+     String s11 = new String();
+   //  String s1= new String ("stringDemo");
 
      // Returns the number of characters in the String.
      System.out.println("String length = " + s.length());
@@ -27,8 +28,8 @@ class StringMethods
      System.out.println("Substring  = " + s.substring(2,5));
 
      // Concatenates string2 to the end of string1.
-     String s1 = "Geeks";
-     String s2 = "forGeeks";
+     String s1 = "stringDemo";
+     String s2 = "test";
      System.out.println("Concatenated string  = " +
                          s1.concat(s2));
 
@@ -38,24 +39,33 @@ class StringMethods
      System.out.println("Index of Share " + 
                         s4.indexOf("Share"));
 
+     int lastShare = s4.lastIndexOf("Learn");
+
+
      //== integers, float, double,
      
-     
+     //abc@gmail.com
+     //.com
+
      // Returns the index within the string of the
      // first occurrence of the specified string,
      // starting at the specified index.
      System.out.println("Index of a  = " + 
-                        s4.indexOf('a',3));
+                        s4.indexOf("gmail",4));
 
      // Checking equality of Strings
-     Boolean out = "Geeks".equals("geeks");
+     Boolean out = "String".equals("String");
      System.out.println("Checking Equality  " + out);
-     out = "Geeks".equals("Geeks");
+     out = "String".equals("string");
      System.out.println("Checking Equality  " + out);
 
-     out = "Geeks".equalsIgnoreCase("gEeks ");
+     out = "String".equalsIgnoreCase("sTring ");
      System.out.println("Checking Equality " + out);
-       
+
+
+
+     //s1 = "Hello", s2="Hello World"
+     //ascii value = space + W + o + r + l + d
      //If ASCII difference is zero then the two strings are similar
      int out1 = s1.compareTo(s2);
      System.out.println("the difference between ASCII value is="+out1);
@@ -74,9 +84,9 @@ class StringMethods
      System.out.println("Trim the word " + word4.trim());
 
      // Replacing characters
-     String str1 = "feeksforfeeks";
+     String str1 = "StringDemo";
      System.out.println("Original String " + str1);
-     String str2 = "feeksforfeeks".replace('f' ,'g') ;
+     String str2 = "StringDemo".replace('g' ,'f') ;
      System.out.println("Replaced f with g -> " + str2);
  } 
 }

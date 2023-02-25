@@ -9,7 +9,7 @@ public class EnhancedForLoopDemo {
 		for (String x : array) {
 			System.out.println(x);
 		}
-
+System.out.println("normal for loop >>>>");
 		
 		  //for loop for same function 
 		  for (int i = 0; i < array.length; i++) {

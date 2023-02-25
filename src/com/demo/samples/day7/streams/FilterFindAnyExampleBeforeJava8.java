@@ -13,7 +13,7 @@ public class FilterFindAnyExampleBeforeJava8 {
                 new Person("lawrence", 40)
                  );
 
-        Person result = getStudentByName(persons, "asas");
+        Person result = getStudentByName(persons, "jack");
         System.out.println(result.getName() + result.getAge());
 
     }

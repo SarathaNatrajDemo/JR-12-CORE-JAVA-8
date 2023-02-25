@@ -31,7 +31,7 @@ public class DowncastingExample{
       p.name = "Shubham";  
         
       // Performing Downcasting Implicitly   
-     // Child1 c =(Child1) new Parent1(); // it gives compile-time error   
+      //Child1 c =(Child1) new Parent1(); // it gives compile-time error
         
       // Performing Downcasting Explicitly   
       Child1 c = (Child1)p;   

@@ -7,18 +7,21 @@ class ThrowsExeception {
 	// to be handled
 	// by caller or caller
 	// of caller and so on.
-	static void fun() throws IllegalAccessException {
+	static void fun() throws Exception {
+		int a= 10, b=0,result=0;
+		result = a/b;
 		System.out.println("Inside fun(). ");
-	 IllegalAccessException iae =new  IllegalAccessException(); 
+		/*IllegalAccessException iae =new  IllegalAccessException("ahhhs");
 		throw iae;
-	}
+*/	}
 
 	// This is a caller function
 	public static void main(String args[]) {
 		try {
 			fun();
-		} catch (IllegalAccessException e) {
-			System.out.println("caught in main   saasaas."+e.getLocalizedMessage());
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
 		}
 	}
 }

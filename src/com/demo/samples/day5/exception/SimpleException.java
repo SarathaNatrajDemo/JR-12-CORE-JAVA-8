@@ -7,13 +7,18 @@ class SimpleException {
 	public static void main(String args[]) {
 
 		try {
-			String str = null;
+			String str = "hello";
 			System.out.println(str.length());
+			// str=null;
+			//System.out.println(str.toString());
 			
-			System.out.println("Simple exception");
-		}catch (Exception objException) {
-			System.out.println(" str is ::"+objException.getLocalizedMessage());
+			System.out.println("stat after exception ");
+
+		} catch (Exception e) {
+		//	System.out.println(" str is ::" + e);
+			e.printStackTrace();
 		}
+		System.out.println("Simple exception");
 
 	}
 }

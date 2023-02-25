@@ -15,7 +15,7 @@ class StringBufferTest {
 
      // Creating adn storing string by creating object of
      // StringBuffer
-     StringBuffer s = new StringBuffer("GeeksforGeeks");
+     StringBuffer s = new StringBuffer("ReactNative_demo");
 
      // Getting the length of the string
      int p = s.length();
@@ -25,9 +25,9 @@ class StringBufferTest {
 
      // Printing the length and capacity of
      // above generated input string on console
-     System.out.println("Length of string GeeksforGeeks="
+     System.out.println("Length of string ReactNative_demo="
                         + p);
      System.out.println(
-         "Capacity of string GeeksforGeeks=" + q);
+         "Capacity of string ReactNative_demo=" + q);
  }
 }

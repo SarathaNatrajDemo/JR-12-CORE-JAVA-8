@@ -20,15 +20,15 @@ public abstract class Shape implements Cloneable {
 	   }
 	   
 	   public Object clone() {
-	      Object clone = null;
+	      Object cloneObj = null;
 	      
 	      try {
-	         clone = super.clone();
+	    	  cloneObj = super.clone();
 	         
 	      } catch (CloneNotSupportedException e) {
 	         e.printStackTrace();
 	      }
 	      
-	      return clone;
+	      return cloneObj;
 	   }
 	}

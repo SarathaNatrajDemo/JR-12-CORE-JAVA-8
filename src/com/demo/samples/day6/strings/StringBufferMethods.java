@@ -14,25 +14,27 @@ class StringBufferMethods {
  {
      // Creating a string via creating
      // object of StringBuffer class
-     StringBuffer s = new StringBuffer("GeeksGeeks");
+     StringBuffer s = new StringBuffer("GeeksforGeeks");
 
      // Invoking reverse() method
      s.reverse();
 
      // Returns "skeeGrofskeeG"
      System.out.println(s);
-     
-    // via delete() and deleteCharAt() Methods
-     s.delete(0, 5);
-     // Returns forGeeks
-     System.out.println(s);
-
+     System.out.println(s.length());
+    
      s.deleteCharAt(7);
      // Returns forGeek
      System.out.println(s);
      
+  // via delete() and deleteCharAt() Methods
+     s.delete(0, 5);
+     // Returns forGeeks
+     System.out.println(s);
+     System.out.println(s.length());
+     
      // via replace() method
-     s.replace(5, 8, "are");
+     s.replace(1, 4, "are");
      
      // Returns GeeksareGeeks
      System.out.println(s);

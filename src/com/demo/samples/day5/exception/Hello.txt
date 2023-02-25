@@ -1,0 +1,20 @@
+class Hello{
+
+	public static void main(String args[]) {
+System.out.println("hello");
+try {
+			String str = "hello";
+			System.out.println(str.length());
+			 str=null;
+			System.out.println(str.toString());
+			
+			System.out.println("stat after exception ");
+
+		} catch (Exception e) {
+			System.out.println(" exception is ::" + e);
+			e.printStackTrace();
+		}
+		System.out.println("Simple exception");
+
+}
+}

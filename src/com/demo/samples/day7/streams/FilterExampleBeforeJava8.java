@@ -10,9 +10,11 @@ public class FilterExampleBeforeJava8 {
     public static void main(String[] args) {
 
         List<String> lines = Arrays.asList("spring", "node", "mkyong","springboot","react");
-        List<String> result = getFilterOutput(lines, "mkyong");
+        List<String> result =  getFilterOutput(lines, "mkyong");
+        
+      //  lines.for(FilterExampleBeforeJava8::getFilterOutput("mkyong"));
         for (String temp : result) {
-            System.out.println(temp);    //output : spring, node
+            System.out.println(temp);    //output : spring, node,springboot, react
         }
 
     }

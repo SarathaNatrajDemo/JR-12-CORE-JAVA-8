@@ -14,9 +14,9 @@ public class BStream {
 
      try {
          sourceStream
-             = new FileInputStream("E:\\test.txt");
+             = new FileInputStream("E:\\test1.txt");
          targetStream
-             = new FileOutputStream("E:\\targetfile.txt");
+             = new FileOutputStream("E:\\targetfile1.txt");
 
          // Reading source file and writing
          // content to target file byte by byte

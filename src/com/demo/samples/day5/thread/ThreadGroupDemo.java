@@ -34,7 +34,7 @@ public class ThreadGroupDemo {
 
 		NewThread t1 = new NewThread("one", gfg);
 		System.out.println("Starting one");
-		NewThread t2 = new NewThread("two", gfg);
+		NewThread t2 = new NewThread("two", gfg_child);
 		System.out.println("Starting two");
 
 		// block until other thread is finished

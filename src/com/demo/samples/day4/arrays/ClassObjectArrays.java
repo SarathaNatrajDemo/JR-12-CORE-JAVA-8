@@ -11,8 +11,10 @@ public class ClassObjectArrays {
 		// array of Strings
 		String[] strArray = new String[3];
 
+		Object obj = new Object();
+
 		System.out.println(intArray.getClass());
-		System.out.println(intArray.getClass().getSuperclass());
+		System.out.println(intArray.getClass());
 		System.out.println(byteArray.getClass());
 		System.out.println(shortsArray.getClass());
 		System.out.println(strArray.getClass());

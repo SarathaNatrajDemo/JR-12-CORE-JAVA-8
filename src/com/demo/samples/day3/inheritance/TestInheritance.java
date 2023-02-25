@@ -9,7 +9,7 @@ public class TestInheritance {
 		// calling super class method because reference to super class
 		System.out.println(dog.print());
 
-		Animal dog_tiny = new Dog("Tiny", "Small Dog", 4, "Black", "Bichon Friese");
+		Dog dog_tiny = new Dog("Tiny", "Small Dog", 4, "Black", "Bichon Friese");
 		// calling super class method because reference to super class
 		System.out.println(dog_tiny.print());
 

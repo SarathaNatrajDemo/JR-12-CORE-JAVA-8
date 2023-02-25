@@ -20,7 +20,7 @@ public class PrintWriterDemo {
 	
 	public static void usingPrintWriter() throws IOException 
 	{
-	  String textToAppend = "Happy Learning !!";
+	  String textToAppend = "Happy JAVA Learning !!";
 	   
 	  FileWriter fileWriter = new FileWriter("E://samplefile.txt", true); //Set true for append mode
 	    PrintWriter printWriter = new PrintWriter(fileWriter);

@@ -15,6 +15,6 @@ public class Computers {
 	public void courseOffered(String topic1, String topic2) {
 		topic1 = "Testing";
 		topic2 = "Debugging";
-		System.out.println(" topic in args 2 "+topic1+ topic2);
+		System.out.println(" topic in args 2 "+topic1+"\n "+ topic2);
 	}
 }

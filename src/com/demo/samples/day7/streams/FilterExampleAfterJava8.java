@@ -14,8 +14,11 @@ public class FilterExampleAfterJava8 {
                 .filter(line -> !"mkyong".equals(line))     // we dont like mkyong
                 .collect(Collectors.toList());              // collect the output and convert streams to a List
 
-        result.forEach(System.out::println);                //output : spring, node
-
-    }
+        //<CLASS NAME> :: <METHOD NAME>
+        //
+        result.forEach(System.out::println);                //output : spring, node,springboot, react
+        result.forEach(s -> System.out.println(s));  
+  
+        }
 
 }

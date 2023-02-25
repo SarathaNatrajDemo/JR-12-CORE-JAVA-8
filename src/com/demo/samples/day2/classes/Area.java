@@ -6,22 +6,30 @@ public class Area {
 	private static double length;
 	private static double breadth;
 	
-	public static void setDim(double len, double bre) {
+	//no args constructor or empty constructor
+	public Area() {
+		System.out.println("Empty / no argument / default constructor called");
+		length = 0;
+		breadth = 0;
+	}
+	
+	//parameterised constructor
+	public Area(double len, double bre) {
+		this.length = len;
+		this.breadth = bre;
+		System.out.println(" parameterised constructor called ");
+	}
+	
+	
+	//method or behaviour or action
+	public  void setDim(double len, double bre) {
 		length = len;
 		breadth = bre;
 	}
+	
+	//method to calculate the area
 	public double getArea() {
 		return this.breadth * this.length;
 	}
-	public static void main(String[] args) {
-		Area areaObj = new Area();
-		System.out.println(" Enter the breadth & length ");
-		Scanner sc = new Scanner(System.in);
-		double len = sc.nextDouble();
-		double bre = sc.nextDouble();
-		
-		setDim(len, bre);
-		System.out.println("Area :: "+areaObj.getArea());
-		
-	}
+	
 }

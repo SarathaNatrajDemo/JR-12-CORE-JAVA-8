@@ -20,7 +20,7 @@ class WrappingUnwrapping {
 		float c = 18.6f;
 
 		// wrapping around Float object
-		Float floatobj = new Float(c);
+		Float floatobj = new Float("4.5");
 
 		// double data type
 		double d = 250.5;
@@ -44,9 +44,9 @@ class WrappingUnwrapping {
 
 		// objects to data types (retrieving data types from objects)
 		// unwrapping objects to primitive data types
-		byte bv = byteobj;
-		int iv = intobj;
-		float fv = floatobj;
+		byte bv = byteobj.byteValue();
+		int iv = intobj.intValue();
+		float fv = floatobj.floatValue();
 		double dv = doubleobj;
 		char cv = charobj;
 

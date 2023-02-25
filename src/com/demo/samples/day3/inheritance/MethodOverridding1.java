@@ -4,13 +4,14 @@ public class MethodOverridding1
 {
 	public static void main(String[] args) {
 		Shapes myShape = new Shapes(); // Create a Shapes object
-		Shapes myTriangle = new Triangle(); // Create a Triangle object
+		Shapes myTriangle = new Triangle(); // Create a Triangle object // belongs to baseClass type
+		Triangle myTriangle1 = new Triangle(); // belongs to subClass type
 		Shapes myCircle = new Circle(); // Create a Circle object
-		myShape.area();
+//		myShape.area();
 		myTriangle.area();
-		myShape.area();
+//	myShape.area();
 		myCircle.area();
 	}
 
 }
-//Base class Polygon, -> Square , Circle -> both with have render methods
+//Base class Shapes, -> Triangle , Circle -> both with have render methods

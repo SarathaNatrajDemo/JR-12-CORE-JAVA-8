@@ -7,6 +7,7 @@ public class ProductCatalog {
 		return new ProductIterator();
 	}
 
+	//INNER CLASS - CLASS INSIDE CLASS
 	private class ProductIterator implements Iterator {
 		int index;
 

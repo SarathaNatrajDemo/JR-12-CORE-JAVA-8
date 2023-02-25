@@ -10,6 +10,7 @@ public class Animal {
 
 	//empty constructor
 	public Animal() {
+		System.out.println("EMPTY CONSTRUCTOR - BASE CLASS ");
 		
 	}
 	// Getter and setter methods - parameterised constructor
@@ -18,6 +19,7 @@ public class Animal {
 		this.breed = breed;
 		this.age = age;
 		this.color = color;
+		System.out.println("PARAMETERISED CONSTRUCTOR- BASE CLASS");
 	}
 
 	// Method of class

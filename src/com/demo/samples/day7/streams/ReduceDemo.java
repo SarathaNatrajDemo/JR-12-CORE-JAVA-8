@@ -12,16 +12,16 @@ public class ReduceDemo {
 		//Math operations
 		int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-		int sum = Arrays.stream(numbers).reduce(0, (a, b) -> a + b);    // 55
+		int sum = Arrays.stream(numbers).reduce(0, (a, b) -> a + b);    // 55; sum =0, sum = sum + a + b; sum = 0+1+2; sum = 3+4+5; sum = 12+6+7
 		System.out.println("sum : "+sum);
 		int sum2 = Arrays.stream(numbers).reduce(0, Integer::sum);      // 55
 		System.out.println(" sum2  :"+sum2);
 
-		int sum3 = Arrays.stream(numbers).reduce(0, (a, b) -> a - b);   // -55
-		int sum4 = Arrays.stream(numbers).reduce(0, (a, b) -> a * b);   // 0, initial is 0, 0 * whatever = 0
+		int sum3 = Arrays.stream(numbers).reduce(0, (a, b) -> a - b);   // -55 sum =0, sum = sum - a - b; sum = 0-1-2; sum = -3-4-5; sum = -12-6-7
+		int sum4 = Arrays.stream(numbers).reduce(1, (a, b) -> a * b);   // 0, initial is 0, 0 * whatever = 0; sum4 = 0* a*b; sum4=0*1*2
 		System.out.println(" sum4  :"+sum4);
-		int sum5 = Arrays.stream(numbers).reduce(0, (a, b) -> a / b);  
-		System.out.println("sum5 ::: "+sum5);
+		double sum5 = Arrays.stream(numbers).reduce(1, (a, b) -> a / b);  // sum4 = 0/a/b;
+		System.out.println("sum5 ::: "+sum5);//sum =0, sum = sum + a + b; sum = 0+1+2; sum = 3+4+5; sum = 12+6+7
 		
 		
 		//Min, max
@@ -83,7 +83,9 @@ public class ReduceDemo {
 	        Optional<Car> car = carList.stream().reduce((c1, c2)
 	                -> c1.getPrice() > c2.getPrice() ? c1 : c2);
 
+	        System.out.println("Expensive Car :");
 	        car.ifPresent(System.out::println);
+	        System.out.println(" Car list :");
 	        carList.forEach(System.out::println);
 
 	        
@@ -96,13 +98,15 @@ public class ReduceDemo {
 	        users.add(new User("Albert", LocalDate.of(1996, 8, 30)));
 	        users.add(new User("Frank", LocalDate.of(1967, 10, 6)));
 	        
+	        
+	        //45,37,20,24,54
 	        int maxAge = users.stream().mapToInt(User::getAge)
 	                .reduce(0, (a1, a2) -> a1 > a2 ? a1 : a2);
 	        
 	  //      Optional<User> usr = users.stream().reduce((c1, c2)
 	    //            -> c1.getPrice() > c2.getPrice() ? c1 : c2);
 
-	        car.ifPresent(System.out::println);
+	        //car.ifPresent(System.out::println);
 	        
 	        System.out.println("The oldest user's age: "+ maxAge);;
 	        

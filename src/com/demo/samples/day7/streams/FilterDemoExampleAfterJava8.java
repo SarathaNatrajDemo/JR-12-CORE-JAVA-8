@@ -18,7 +18,7 @@ public class FilterDemoExampleAfterJava8 {
                 .findAny()                                      // If 'findAny' then return found
                 .orElse(null);                                  // If not found, return null
 
-        System.out.println(result1);
+        System.out.println(result1.getAge()+" "+result1.getName());
         
         Person result2 = persons.stream()
                 .filter(x -> "abc".equals(x.getName()))

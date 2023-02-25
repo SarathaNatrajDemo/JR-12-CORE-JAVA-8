@@ -18,7 +18,7 @@ public class TestCustomException1 {
 	public static void main(String args[]) {
 		try {
 			// calling the method
-			validate(13);
+			validate(21);
 		} catch (InvalidAgeException ex) {
 			System.out.println("Caught the exception");
 

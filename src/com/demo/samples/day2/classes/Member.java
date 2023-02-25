@@ -10,6 +10,7 @@ public class Member {
     
     //Empty or no-arg constructor
     public Member() {
+    	System.out.println(" Empty constructor is called");
     	name = "Sai";
     	age = 21;
     	phoneNumber="8916645675";
@@ -20,6 +21,7 @@ public class Member {
     
     //Parameterised or Arguments constructor
     public Member(String name, int age, String phoneNumber, String address, double salary) {
+    	System.out.println(" parameterized constructor is called");
         this.name = name;
         this.age = age;
         this.phoneNumber = phoneNumber;
@@ -28,6 +30,7 @@ public class Member {
     }
 
     public void printSalary() {
+    	
         System.out.println("Salary " + salary);
     }
     

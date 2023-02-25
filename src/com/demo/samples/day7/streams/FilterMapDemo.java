@@ -23,8 +23,8 @@ public class FilterMapDemo {
 
         System.out.println("name : " + name);
 
-        List<String> collect = persons.stream()
-                .map(Person::getName)
+        List<Integer> collect = persons.stream()
+                .map(Person::getAge)
                 .collect(Collectors.toList());
 
         collect.forEach(System.out::println);

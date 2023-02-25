@@ -5,18 +5,21 @@ package com.demo.samples.day5.exception;
 
 class Division {
 	public static void main(String[] args) {
-		int a = 10, b = 5, c = 5, result;
+		int a = 50, b = 5, c = 5, result;
 		try {
 			result = a / (b - c);
-			System.out.println("result" + result);
+			System.out.println("result " + result);
+			System.out.println("no exceptions ");
 		}
 
-		catch (Exception e) {
-			System.out.println("Exception caught:Division by zero");
+		catch (Exception exeObj) {
+			System.out.println("Exception caught:Division by zero ");
+			exeObj.printStackTrace();
 		}
 
 		finally {
-			System.out.println("I am in final block");
+			System.out.println("I am in finally block");
 		}
+
 	}
 }

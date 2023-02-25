@@ -13,7 +13,7 @@ class Sender {
 	// that we can use synchronized with method also.
 	// synchronized method or block
 	public void send(String msg) {
-		synchronized (this) {
+	synchronized (this) {
 			System.out.println("Sending\t" + msg);
 			try {
 				Thread.sleep(1000);

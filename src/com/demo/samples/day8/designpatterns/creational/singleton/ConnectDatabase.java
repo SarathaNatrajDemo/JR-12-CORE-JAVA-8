@@ -13,8 +13,15 @@ public class ConnectDatabase {
    }
    private static Connection getConnection(String databaseName, String UserName, String password) {
       try {
-         Class.forName("com.mysql.jdbc.Driver");
-         conn = DriverManager.getConnection("jdbc:mysql://localhost/" + databaseName + "?user=" + UserName + "&password=" + password);
+    	 //Step 1 - load the driver class          
+         Class.forName("org.postgresql.Driver");
+         
+       //Step 2 - get connection         
+         conn = DriverManager
+                 .getConnection("jdbc:postgresql://localhost:5432/sample",
+                         "postgres", "1234");
+         System.out.println("Opened database successfully");
+
       } catch (Exception e) {
          e.printStackTrace();
       }

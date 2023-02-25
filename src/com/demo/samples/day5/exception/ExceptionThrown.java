@@ -38,9 +38,12 @@ class ExceptionThrown {
 
 		int a = 1;
 		int b = 0;
+		String s ="8";
+		
 
 		try {
 			int i = computeDivision(a, b);
+			i = a/b;
 
 		}
 
@@ -48,6 +51,7 @@ class ExceptionThrown {
 		catch (ArithmeticException ex) {
 			// getMessage will print description of exception(here / by zero)
 			System.out.println(ex.getMessage());
+			ex.printStackTrace();
 		}
 	}
 }

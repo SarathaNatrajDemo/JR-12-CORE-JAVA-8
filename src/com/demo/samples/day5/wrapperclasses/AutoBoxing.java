@@ -9,12 +9,12 @@ class Autoboxing {
 		char ch = 'a';
 
 		// Autoboxing- primitive to Character object conversion
-		Character a = ch;
+		Character charObj = ch;
 
 		ArrayList<Character> arrayList = new ArrayList<Character>();
 
 		// Autoboxing because ArrayList stores only objects
-		arrayList.add(a);
+		arrayList.add(charObj);
 
 		// printing the values from object
 		System.out.println(arrayList.get(0));

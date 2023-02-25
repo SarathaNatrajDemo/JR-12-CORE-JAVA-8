@@ -6,11 +6,14 @@ public class AccountManagement {
 	private float currentBalance = 6000f;
 
 	public static void main(String[] args) {
+		
 		Scanner inputDevice = new Scanner(System.in);
-		System.out.print("Please enter amount to add / withdraw in your balance: ");
-		System.out.print("Please enter your choice: ");
+		System.out.println("Please enter amount to add / withdraw in your balance: ");
+		System.out.println("Please enter your choice: ");
+		
 		int choice = inputDevice.nextInt();
 		float newAmount = inputDevice.nextFloat();
+		
 		switch (choice) {
 		case 1: {
 			try {
@@ -22,6 +25,7 @@ public class AccountManagement {
 				new AccountManagement().createFixDeposit(fdAmount);
 				System.out.println("Account Balance = " + 20000);
 			}
+			break;
 			
 		}
 		case 2: {
@@ -32,11 +36,11 @@ public class AccountManagement {
 					
 			//	System.out.println("Total Account Balance = " + totalAmount);
 			} catch (AccountInsufficientException a) {
-				 totalAmount = a.getAccountBalance() - newAmount;
+			//	 totalAmount = a.getAccountBalance() - newAmount;
 				System.out.println("Your account balance is reached the minimum level " );
-				System.out.println("Account Balance = " + totalAmount);
+				System.out.println("Account Balance = " + a.getAccountBalance());
 			}
-			
+			break;
 		}
 		default:
 		//	throw new IllegalArgumentException("Unexpected value: " + choice);
@@ -53,6 +57,8 @@ public class AccountManagement {
 		return total;
 	}
 
+
+	//TODO - this will be implemented later
 	public void createFixDeposit(float fxAmount) {
 		// Implimentation of FD creation
 		

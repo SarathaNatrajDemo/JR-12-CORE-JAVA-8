@@ -20,11 +20,13 @@ public class HashMapDemo {
      // Finding the value for a key
      System.out.println("Value for 1 is " + hm.get(1));
 
-     // Traversing through the HashMap
+     // Traversing through the HashMap - METHOD - 1
      for (Map.Entry<Integer, String> e : hm.entrySet())
          System.out.println(e.getKey() + " " + e.getValue());
      
-     hm.forEach((k,v)->System.out.println("key: " + k + ", value: " + v));
+     
+     //METHOD - 2
+    hm.forEach((k,v)->System.out.println("key: " + k + ", value: " + v));
 
  }
 }

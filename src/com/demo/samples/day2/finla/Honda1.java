@@ -1,6 +1,6 @@
 package com.demo.samples.day2.finla;
 
- class MyBike {
+  class MyBike {
 }
 
 class Honda1 extends MyBike {
